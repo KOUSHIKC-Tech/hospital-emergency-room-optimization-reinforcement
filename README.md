@@ -179,8 +179,7 @@ The system evaluates performance using three levels:
 Developed as part of learning **Reinforcement Learning and decision systems**.
 
 KOUSHIK C
-MANJUNATH V
-GOWTHAM L
+
 
 ## ⭐ If you like this project
 
