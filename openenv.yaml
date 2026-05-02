@@ -1,0 +1,24 @@
+name: hospital_er_env
+description: AI environment for optimizing emergency room decisions
+
+actions:
+  - treat_patient
+  - wait
+
+observations:
+  patients:
+    severity: [1, 10]
+    waiting_time: [0, inf]
+    condition: [0, 10]
+  available_doctors: [0, inf]
+  available_beds: [0, inf]
+  step_count: [0, inf]
+
+constraints:
+  - cannot_treat_without_doctor
+  - cannot_treat_without_bed
+
+reward_signals:
+  - treat_critical_patient
+  - reduce_waiting_time
+  - prevent_condition_worsening
